@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cryptoreport 🪙</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="upper">
+          <button class="settings" onclick="currentSlide(2)">
+            <i class="fa-solid fa-gear"></i>
+          </button>
+        </div>
+        <div class="lower">
+          <div class="items slide0">
+            <h2>Welcome to Cryptoreport</h2>
+            <p>
+              Get the latest of information straight into your ears with this
+              cryptoreport.
+            </p>
+            <h3>Select your cryptocurrency:</h3>
+            <select name="cryptocur" id="cryptocurId" class="select">
+              <optgroup>
+                <option value="btc">Bitcoin (BTC)</option>
+                <option value="eth">Ethereum (ETH)</option>
+                <option value="ltc">Litecoin (LTC)</option>
+              </optgroup>
+            </select>
+            <h3>Select your currency:</h3>
+            <select name="cur" id="curId" class="select">
+              <optgroup>
+                <option value="eur" disabled>
+                  Euro (EUR) - Unsupported API Opt.
+                </option>
+                <option value="usd">Dollar (USD)</option>
+                <option value="czk" disabled>
+                  Czech Crown (CZK) - Unsupported API Opt.
+                </option>
+              </optgroup>
+            </select>
+
+            <button class="button step0">Proceed to the next step</button>
+          </div>
+          <div class="items slide2 hideLayer hidden">
+            <h2>Settings</h2>
+            <p>
+              Personalize the cryptoreport to your liking, change the coulours
+              to fit your mood!
+            </p>
+            <h3>Select your theme:</h3>
+            <select name="themesel" id="themeselect" class="select">
+              <optgroup>
+                <option value="black">Dark</option>
+                <option value="white">No, there is no light mode 💡</option>
+              </optgroup>
+            </select>
+            <h3>Select your preferable colour:</h3>
+            <select name="colselect" id="colsel" class="select">
+              <optgroup>
+                <option value="red">Red</option>
+                <option value="blue">Blue</option>
+                <option value="orange">Orange</option>
+                <option value="purple">Purple</option>
+              </optgroup>
+            </select>
+            <button class="button step2">Save & Exit</button>
+          </div>
+          <div class="items1 slide1 hideLayer hidden">
+            <h2 id="convTitle">Real deal > Unreal deal</h2>
+            <p>
+              Get the latest of information straight into your ears with this
+              cryptoreport.
+            </p>
+            <p>Today</p>
+            <h2 class="todayRate">1 ETH = 2435 EUR</h2>
+            <p>Yesterday</p>
+            <h2 class="yesterdayRate">1 ETH = 2435 EUR</h2>
+            <p id="tooltip">
+              Investing in cryptocurrency is an endeavour with high risks,
+              please proceed with caution, were you to invest.
+            </p>
+            <button class="button step3">Listen to your report</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="tts.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
