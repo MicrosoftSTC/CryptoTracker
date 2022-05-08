@@ -1,5 +1,5 @@
 # CryptoTracker 📊
-Have you ever wanted to just check the correct prices of cryptocurrencies with ease? Awesome! This project does just that!
+Have you ever wanted to just check the correct prices of cryptocurrencies with ease? Awesome! This project does just that, but with a twist! Using the JavaScript synthesis function, it delivers the data also in the form of speech!
 Check the prices of:
 > Bitcoin, Litecoin and Ethereum
 
