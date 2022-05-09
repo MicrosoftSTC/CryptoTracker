@@ -130,7 +130,7 @@ step0btn.onclick = () => {
   }
   // API Fetch
   convTitle.innerText = `${cryptoCurText} > ${curText}`;
-  let url = `http://api.coinlayer.com/api/live?access_key=83bc94a1b1be33ed7e6ac1747f56ac87&symbols=BTC,ETH,LTC`;
+  let url = `http://api.coinlayer.com/api/live?access_key=YOURAPIKEY&symbols=BTC,ETH,LTC`;
   fetch(url)
     .then(function (resp) {
       return resp.json();
@@ -191,7 +191,7 @@ step0btn.onclick = () => {
   // History API Fetch
   let url2 = `http://api.coinlayer.com/api/${formatDate(
     yesterday
-  )}?access_key=83bc94a1b1be33ed7e6ac1747f56ac87&symbols=BTC,ETH,LTC`;
+  )}?access_key=YOURAPIKEY&symbols=BTC,ETH,LTC`;
   fetch(url2)
     .then(function (resp) {
       return resp.json();
