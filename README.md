@@ -11,3 +11,7 @@ HTML, CSS & JavaScript, this project is easy enough for everyone to try and recr
 API used: *https://coinlayer.com/*
 ## Used design 🖼️
 The design in use was created by me, inspired by the new Windows 11 design language, if you wish for the mock-up files, do not hesitate to contact me!
+### To create this app 💻
+You are free to copy the files, to get it working, sign up on Coinlayer and replace:
+> YOURAPIKEY 
+with your own key that you recieved after creating an account on Coinlayer.
